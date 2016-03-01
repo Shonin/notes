@@ -1,0 +1,6 @@
+To have the terminal display pretty ->
+	user (gitBranch) Folder $
+
+export PS1='\[\033[;35m\]\u\[\033[0;32m\]$(__git_ps1)\[\033[0;34m\] \W $ \[\033[0m\]'
+
+Add that to the .bashrc

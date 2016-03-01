@@ -1,0 +1,20 @@
+VirtualEnv Install Etc
+======================
+
+http://askubuntu.com/questions/244641/how-to-set-up-and-use-a-virtual-python-environment-in-ubuntu
+
+
+# Make test environment
+mkvirtualenv test
+
+# Enter test environment
+workon test
+
+# Leave test environment
+deactivate
+
+# Delete test environment
+rmvirtualenv test
+
+# NOTE:
+All virtual environments have pip automatically installed, never call pip with sudo in your virtual environment, because this will use the system wide pip.

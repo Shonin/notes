@@ -1,0 +1,19 @@
+Setup
+======
+I have unzipped the Google App Engine to:
+	~/lib/google_appengine
+
+So at the bottom of the .bashrc file I added:
+
+export GAE=/home/tinycat/lib/google_appengine
+
+This creates a global variable called $GAE (google app engine)
+
+Launching Dev Server
+====================
+python $GAE/dev_appserver.py /path/to/app/folder/
+
+Deploying to the Web
+====================
+python $GAE/appcfg.py update /path/to/app/folder/
+
